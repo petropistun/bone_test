@@ -5,6 +5,6 @@ ENV INITSYSTEM on
 
 # Install Python and other dependencies
 RUN apt-get update \
-	&& apt-get install -yq --no-install-recommends dropbear sshfs mc \
+	&& apt-get install -yq dropbear sshfs mc \
 	&& rm -rf /var/lib/apt/lists
 
